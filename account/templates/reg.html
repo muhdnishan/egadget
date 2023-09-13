@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block login %}
+<form class="reg" action="" method="post">
+<h3>Customer Signup</h3>
+    {%csrf_token%}
+    {{form}}
+    <button>Sign Up</button>
+    <div class="social">
+      Already a user?. <a href="{% url 'h' %}">Sign in</a>
+    </div>
+</form>
+{% endblock login %}
